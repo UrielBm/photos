@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.1/cropper.min.css" integrity="sha512-hvNR0F/e2J7zPPfLC9auFe3/SE0yG4aJCOd/qxew74NN7eyiSKjr7xJJMu1Jy2wf7FXITpWS1E/RY8yzuXN7VA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Photos</title>
+</head>
+<body>
+   <main class="main">
+    <h1>Plantilla de Fotos</h1>
+    <div class="wrapperPhotos">
+        <div class="myWrapperFoto">
+            <img class="photo" src="" alt="aun no se ha subido alguna imagen" id="photo" >
+        </div>
+        <img class="photo" src="" id="photoEdit" alt="aun sin una foto recortada" >
+    </div>
+        <div class="wrapperInputs">
+            <label for="inputFile">Subir la imagen a editar</label>
+            <input type="file" accept="image/jpeg, image/jpg" id="inputFile" class="input">
+        </div>
+        <div class="wrapperButtons hidden">
+            <button class="button" id="actionCut">Recortar</button>
+            <button class="button" id="action4infantil">4 infantil</button>
+        </div>
+        <div class="wrapperFotosEdits" id="wrapperFotosEdits">
+
+        </div>
+   </main>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.1/cropper.min.js" integrity="sha512-9KkIqdfN7ipEW6B6k+Aq20PV31bjODg4AA52W+tYtAE0jE0kMx49bjJ3FgvS56wzmyfMUHbQ4Km2b7l9+Y/+Eg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="./js/index.js"></script>
+</body>
+</html>
